@@ -27,7 +27,7 @@ spec:
     metadata:
       labels:
         source: demo
-        app: spinnaker
+        app: spinnaker-demo
     spec:
       containers:
       - name: primary
