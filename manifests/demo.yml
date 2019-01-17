@@ -27,6 +27,7 @@ spec:
       labels:
         source: demo
         app: spinnaker-demo
+        serial: "1"
     spec:
       containers:
       - name: primary
