@@ -16,6 +16,7 @@ metadata:
   labels:
     source: demo
     app: spinnaker
+    serial: "1"
 spec:
   replicas: 3
   selector:
@@ -26,8 +27,7 @@ spec:
     metadata:
       labels:
         source: demo
-        app: spinnaker-demo
-        serial: "1"
+        app: spinnaker
     spec:
       containers:
       - name: primary
@@ -52,7 +52,7 @@ metadata:
 spec:
   selector:
     source: demo
-    app: spinnaker
+    app: spinnaker-demo
   ports:
   - protocol: TCP
     port: 80
