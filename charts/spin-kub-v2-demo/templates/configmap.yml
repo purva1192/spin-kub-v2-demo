@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "spin-kub-v2-demo.fullname" . }}
+  labels:
+    app.kubernetes.io/name: {{ include "spin-kub-v2-demo.name" . }}
+    helm.sh/chart: {{ include "spin-kub-v2-demo.chart" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/managed-by: {{ .Release.Service }}
+data:
+  NEW_FEATURE: "{{ .Values.newFeature }}"

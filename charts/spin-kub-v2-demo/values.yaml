@@ -1,0 +1,34 @@
+newFeature: "true"
+
+replicaCount: 1
+
+image:
+  repository: index.docker.io/lwander/spin-kub-v2-demo
+  tag: stable
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingress:
+  enabled: false
+  annotations:
+    kubernetes.io/ingress.class: primary
+    kubernetes.io/tls-acme: "true"
+  paths:
+    - /
+  hosts: []
+    # - chart-example.local
+  tls: []
+  #  - secretName: chart-example-tls
+  #    hosts:
+  #      - chart-example.local
+
+resources: {}
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
