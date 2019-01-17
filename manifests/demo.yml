@@ -15,7 +15,6 @@ metadata:
   namespace: default
   labels:
     source: demo
-    stack: frontend
     app: spinnaker
 spec:
   replicas: 3
