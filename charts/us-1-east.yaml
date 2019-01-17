@@ -1,0 +1,10 @@
+ingress:
+  enabled: true
+  paths:
+    - /
+  hosts: []
+    - spinnaker-demo.us-1-west.mertslounge.ca
+  tls: []
+   - secretName: spinnaker-demo-tls
+     hosts:
+       - spinnaker-demo.us-1-west.mertslounge.ca
