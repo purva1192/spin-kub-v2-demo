@@ -1,10 +1,11 @@
+# bump
 ingress:
   enabled: true
   paths:
     - /
-  hosts: []
+  hosts:
     - spinnaker-demo.us-1-west.mertslounge.ca
-  tls: []
+  tls:
    - secretName: spinnaker-demo-tls
      hosts:
        - spinnaker-demo.us-1-west.mertslounge.ca

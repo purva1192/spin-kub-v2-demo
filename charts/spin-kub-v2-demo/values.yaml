@@ -4,7 +4,7 @@ replicaCount: 1
 
 image:
   repository: index.docker.io/lwander/spin-kub-v2-demo
-  tag: stable
+  tag: latest
   pullPolicy: IfNotPresent
 
 service:

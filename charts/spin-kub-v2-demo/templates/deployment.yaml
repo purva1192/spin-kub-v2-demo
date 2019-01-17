@@ -37,7 +37,7 @@ spec:
               port: http
           envFrom:
           - configMapRef:
-              name: {{ include "spin-kub-v2-demo.name" . }}
+              name: {{ include "spin-kub-v2-demo.fullname" . }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}
