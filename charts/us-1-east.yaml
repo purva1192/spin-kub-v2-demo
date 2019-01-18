@@ -4,8 +4,8 @@ ingress:
   paths:
     - /
   hosts:
-    - spinnaker-demo.us-1-west.mertslounge.ca
+    - spinnaker-demo.us-1-east.mertslounge.ca
   tls:
    - secretName: spinnaker-demo-tls
      hosts:
-       - spinnaker-demo.us-1-west.mertslounge.ca
+       - spinnaker-demo.us-1-east.mertslounge.ca
