@@ -1,4 +1,4 @@
-# bump
+# comment 1
 ingress:
   enabled: true
   paths:
