@@ -1,0 +1,7 @@
+releases:
+  - name: cert-test
+    namespace: cert-test
+    chart: ./spin-kub-v2-demo
+    version: 0.1.0
+    values:
+      - values.yaml.gotmpl

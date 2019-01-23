@@ -1,0 +1,12 @@
+ingress:
+  enabled: true
+  annotation:
+    certmanager.k8s.io/cluster-issuer: letsencrypt-staging
+  paths:
+    - /
+  hosts:
+    - cert-test.us-1-west.mertslounge.ca
+  tls:
+   - secretName: cert-test-tls
+     hosts:
+       - cert-test.us-1-west.mertslounge.ca
